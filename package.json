@@ -1,0 +1,42 @@
+{
+  "name": "hanan_shah",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "/",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "bootstrap": "^4.3.1",
+    "bootstrap-less": "3.3.8",
+    "gulp-install": "1.1.0",
+    "history": "4.7.2",
+    "immutability-helper": "^3.0.1",
+    "jquery": "^3.4.1",
+    "ol": "^5.3.3",
+    "popper.js": "^1.15.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "0.9.5",
+    "reactstrap": "^8.0.0",
+    "redux": "^3.6.0",
+    "redux-form": "7.1.1",
+    "redux-logger": "3.0.6",
+    "redux-thunk": "2.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.3.2",
+    "react-scripts": "1.0.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

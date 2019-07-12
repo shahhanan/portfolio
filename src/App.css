@@ -1,0 +1,334 @@
+html{
+  height: 100%;
+}
+body{
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Dancing Script', cursive;
+  height: 100%;
+}
+#root{
+  height: 100%;
+}
+.App {
+  text-align: justify;
+  height: 100%;
+}
+a{
+  color: white;
+}
+a:hover{
+  color: #1c98ad;
+}
+/* Header Css */
+.container{
+  width: 100% !important;
+  position: relative;
+}
+.mainContainer{
+  top: 100px;
+  position: relative;
+  width: 100%;
+  padding: 0 15px;
+  height: calc(100% - 100px);
+}
+.mainContainer .container-fluid{
+  height: 100%;
+}
+header .row{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+header{
+  width: 100%;
+  height: 100px;
+  background-color: #f8f8f8;
+  opacity: .9;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  -webkit-box-shadow: 0 8px 6px -6px #3e3e3e;
+  -moz-box-shadow: 0 8px 6px -6px #3e3e3e;
+  box-shadow: 0 8px 6px -6px #3e3e3e;
+}
+header .nameTitle{
+  text-align: left;
+  font-size: 1.5rem;  
+  margin: 20px;
+}
+header .nameTitle a.Name{
+  color: #000;
+  width: 60px;
+  height: 60px;
+  display: block;
+  overflow: visible;
+  border: 5px solid #494c4e;
+  position: relative;
+  transform: rotate(0deg);
+  transition: transform .4s ease-in-out;
+  flex-shrink: 0;
+  text-align: center;
+}
+header .nameTitle a.Name:hover {
+  opacity: 1;
+  transform: rotate(-90deg);
+  transition: transform .4s ease-in-out;
+}
+header .nameTitle a.Name:hover span {
+  transform: translate(-50%,-50%) rotate(90deg);
+  transform-origin: center;
+}
+header .nameTitle a.Name span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(0deg);
+  transition: transform .4s ease-in-out;
+  font-weight: 700;
+  font-size: 14px;
+}
+.headerWrapper{
+  height: inherit;
+  display: inline-block;
+}
+.lh100{
+  line-height: 100px;
+}
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  line-height: none;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  float: right;
+}
+
+header li {
+  float: left;
+  width: auto;
+  text-align: center;
+}
+
+header li a {
+  display: block;
+  color: #444 !important;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+header li a svg{
+  font-size: 25px !important;
+}
+
+header li a:hover {
+  cursor: pointer;
+}
+header li a span.liText{
+  color: #575757;
+  line-height: auto;
+  font-weight: 600;
+}
+header ul li a.nav-link.active svg{
+ color: #1c98ad;
+}
+header ul li a.nav-link.active span.liText{
+  color: #1c98ad;
+}
+/* Header Css Ends Here*/
+/* Gerenric feedback system css */
+#reactFeedbackComponent{
+  width: 500px;
+  padding: 0 50px;
+  box-shadow: 0px 0px 10px 1px #ccc;
+  margin: auto; 
+}
+.lh36{
+  line-height: 36px;
+}
+.h40{
+  height: 40px;
+}
+.mb10{
+  margin-bottom: 10px;
+}
+.pb30{
+  padding-bottom: 30px !important;
+}
+#outerDiv{
+  width: 100%;
+  height: 100%;
+  border: 2px solid grey;
+  border-radius: 20px;
+
+}
+#outerDiv #percentage{
+  float: right;
+  width: 30px;
+  height: 100%;
+  line-height: 36px;
+  font-weight: bold;
+}
+#outerDiv #scroller{
+  background: url('../public/assets/images/scroll.png');
+  background-repeat: no-repeat; 
+  background-size: 0px 0px;
+  float: left;
+  width: calc(100% - 30px);
+  height: 100%;
+  border-radius: 20px;
+}
+.smiley{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+}
+.container .formHeading{
+  text-align: left;
+  font-weight: bold;
+  font-size: 22px;
+  padding-top: 30px;
+
+}
+.container .row span.blockTitle{
+  display: block;
+  width: 100%;
+}   
+.submit{
+  background-color: #00d1b9;
+  border-color: #00d1b9;
+  border-radius: 20px;
+  font-weight: bold;
+}
+/* Gerenric feedback system css */
+
+/* Home css */
+.Home{
+  height: 100%;
+}
+#intro-container{
+width: 100%;
+height: 100%;
+min-width: 100%;
+position: relative;
+}
+#intro-container::before {
+  background-image: url('../public/assets/images/home-bg.jpg');
+  background-size: cover;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.4;
+}
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+#intro-container .intro-card{
+  background: white;
+  width: 42%;
+  height: 60%;
+  box-shadow: 0px 2px 12px -1px #3e3e3e;
+  position: absolute;
+  left: 70px;
+  border-radius: 25px;
+}
+#intro-container .intro-card .card-container{
+  width: 90%;
+  height: 80%;
+  margin: 50px auto;
+  background-color: white;
+}
+#intro-container .Profile-Image img {
+  width: 200px;
+  height: 200px;  
+  border-radius:100px;
+  -webkit-border-radius:100px;
+  -moz-border-radius:100px;
+  -o-border-radius:100px;
+  transform: translate(0%,10%);
+  border: inset gray;
+}
+#intro-container .Profile-Image{
+  width: 30%;
+  min-height: 300px;
+  float: left;
+}
+#intro-container .Information-Card{
+  float: right;
+  width: 70%;
+  min-height: 300px;
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 30px;
+}
+#intro-container .Information-Card .heading span.name h3.bold-Name{
+  display: inline;
+  font-size: 2rem;
+} 
+#intro-container .Information-Card .heading span.designation{
+  display: block;
+  font-size: 1.3rem;
+}
+#intro-container .info-tabs{
+  font-size: 1.1rem;
+}
+#intro-container .info-tabs .info-line span.text-label{
+  font-weight: bold;
+  width: 150px;
+  display: inline-block;
+}
+#intro-container .card-container .social-icons{
+  width: 100%;
+  float: left;
+  height: 100px;
+  background: #333;
+}
+#intro-container .social-icons{
+  color: white;
+}
+#intro-container .social-icons svg{
+  width: 40px !important;
+  height: 40px !important;
+
+}
+#intro-container .intro-card{
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+#intro-container .social-icons .icons-container{
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+}
+#intro-container .social-icons .icons-container span{
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+}
+#intro-container .social-icons .icons-container span svg{
+  transform: translate(50%,60%);
+}
+/* Home css ends here */

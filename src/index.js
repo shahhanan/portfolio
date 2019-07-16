@@ -28,7 +28,7 @@ ReactDOM.render(
           {/* <Route exact path="/500" name="Page 500" component={Page500}/> */}
           {/* <Route path="/404" name="Page404" component={Page404} />
           <Route exact path="" name="Home2" component={Approuter} />  */}
-          <Route path="/" name="Home1" component={Approuter} />
+          <Route path="/" name="Home" component={Approuter} />
         </Switch>
       </HashRouter>
     </ErrorBoundary>

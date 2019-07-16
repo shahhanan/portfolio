@@ -108,8 +108,9 @@ header ul {
 
 header li {
   float: left;
-  width: auto;
+  width: 70px;
   text-align: center;
+  font-size: 1.2rem;
 }
 
 header li a {
@@ -199,8 +200,13 @@ header ul li a.nav-link.active span.liText{
 .submit{
   background-color: #00d1b9;
   border-color: #00d1b9;
-  border-radius: 20px;
+  border-radius: 25px;
   font-weight: bold;
+  color: #333;
+  font-size: 20px;
+}
+#reactFeedbackComponent .form-control{
+  border-radius: 25px;
 }
 /* Gerenric feedback system css */
 
@@ -213,6 +219,7 @@ width: 100%;
 height: 100%;
 min-width: 100%;
 position: relative;
+overflow: hidden;
 }
 #intro-container::before {
   background-image: url('../public/assets/images/home-bg.jpg');
@@ -234,9 +241,8 @@ position: relative;
     align-content: center;
 }
 #intro-container .intro-card{
-  background: white;
-  width: 42%;
-  height: 60%;
+  width: 750px;
+  height: 500px;
   box-shadow: 0px 2px 12px -1px #3e3e3e;
   position: absolute;
   left: 70px;
@@ -246,7 +252,6 @@ position: relative;
   width: 90%;
   height: 80%;
   margin: 50px auto;
-  background-color: white;
 }
 #intro-container .Profile-Image img {
   width: 200px;
@@ -330,5 +335,36 @@ position: relative;
 }
 #intro-container .social-icons .icons-container span svg{
   transform: translate(50%,60%);
+}
+#intro-container .sideCard{
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  right: 30px;
+  -webkit-animation-name: sidecardAnimate; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: sidecardAnimate;
+  animation-duration: 2s;
+  box-shadow: 0px 2px 12px -1px #3e3e3e;
+}
+@-webkit-keyframes sidecardAnimate {
+  from {transform: translateX(130%); transition-timing-function: ease-in;}
+  to {transform: translateX(0); transition-timing-function: ease-in;}
+}
+
+/* Standard syntax */
+@keyframes sidecardAnimate {
+  from {transform: translateX(130%); transition-timing-function: ease-in;}
+  to {transform: translateX(0); transition-timing-function: ease-in;}
+}
+#intro-container .sideCard .mini-about{
+  color: black;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+}
+#intro-container .sideCard .mini-about a{
+  color: brown;
 }
 /* Home css ends here */

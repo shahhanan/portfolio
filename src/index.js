@@ -10,7 +10,7 @@ import {
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 library.add(fab, faHome, faUser, faCode, faEnvelope);
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
 import { Provider } from "react-redux";
 import { createBrowserHistory } from "history";
 import configureStore from "./store";
@@ -29,7 +29,7 @@ ReactDOM.render(
           {/* <Route path="/404" name="Page404" component={Page404} />
           <Route exact path="" name="Home2" component={Approuter} />  */}
           <Route path="/" name="Home" component={Approuter} />
-        </Switch>
+          </Switch>
       </HashRouter>
     </ErrorBoundary>
   </Provider>,

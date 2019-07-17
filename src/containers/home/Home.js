@@ -25,6 +25,7 @@ class Home extends Component {
               Currently I am accepting freelance work, 
               I'd love to get coffee and get to know you, 
               so don’t hesitate to get in touch.
+              <div className="contactMeArea"></div>
               </div>
           </div>
         </div>

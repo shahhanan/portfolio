@@ -44,7 +44,6 @@ header{
   width: 100%;
   height: 100px;
   background-color: #f8f8f8;
-  opacity: .9;
   position: fixed;
   top: 0;
   z-index: 9;
@@ -358,7 +357,7 @@ overflow: hidden;
   to {transform: translateX(0); transition-timing-function: ease-in;}
 }
 #intro-container .sideCard .mini-about{
-  color: black;
+  color: #000000;
   font-size: 1.5rem;
   width: 100%;
   height: 100%;

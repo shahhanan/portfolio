@@ -212,6 +212,7 @@ header ul li a.nav-link.active span.liText{
 /* Home css */
 .Home{
   height: 100%;
+  box-shadow: 0px 2px 12px -1px #3e3e3e;
 }
 #intro-container{
 width: 100%;
@@ -367,3 +368,28 @@ overflow: hidden;
   color: brown;
 }
 /* Home css ends here */
+
+
+/* Skills Css */
+.skills{
+  height: 100%;
+  box-shadow: 0px 2px 12px -1px #3e3e3e;
+}
+.Skills .recharts-wrapper{
+  box-shadow: 0px 2px 12px -1px #3e3e3e;
+}
+.Skills .technologiesContainer .technologiesUsed{
+  font-size: 1.5rem;
+}
+.technologiesContainer{
+  display: inline-block;
+  float: left;
+  box-shadow: 0px 2px 12px -1px #3e3e3e;
+}
+.SkillsIndicator{
+  float: left;
+}
+#technologesBarChart{
+  box-shadow: 0px 2px 12px -1px #3e3e3e;
+}
+/* Skills Css  Ends Here */

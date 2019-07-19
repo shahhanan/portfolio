@@ -337,8 +337,10 @@ overflow: hidden;
   transform: translate(50%,60%);
 }
 #intro-container .sideCard{
-  width: 500px;
-  height: 500px;
+  font-family: 'Bad Script', cursive;
+/*   font-family: 'Marcellus', serif;
+ */  width: calc(100% - 900px);
+  min-height: 500px;
   position: absolute;
   right: 30px;
   -webkit-animation-name: sidecardAnimate; /* Safari 4.0 - 8.0 */
@@ -346,6 +348,7 @@ overflow: hidden;
   animation-name: sidecardAnimate;
   animation-duration: 2s;
   box-shadow: 0px 2px 12px -1px #3e3e3e;
+  border-radius: 0 25px 0 25px;
 }
 @-webkit-keyframes sidecardAnimate {
   from {transform: translateX(130%); transition-timing-function: ease-in;}

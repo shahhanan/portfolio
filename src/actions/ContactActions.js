@@ -85,4 +85,32 @@ const mock = [{
       "Design": 7.3, 
       'Performance': 4.9, 
     }
+  },{
+    "Name": "Berenice Ilson",
+    "Feedback": {
+      "Design": 7.3, 
+      'Performance': 4.9, 
+      "Responsive": 7.4
+    }
+  }, {
+    "Name": "Sabina Burkill",
+    "Feedback": {
+      "Design": 7.3, 
+      'Performance': 4.9, 
+      "Responsive": 7.4
+    }
+  }, {
+    "Name": "Dyanna Vasilechko",
+    "Feedback": {
+      "Design": 7.3, 
+      'Performance': 4.9, 
+      "Responsive": 7.4
+    }
+  }, {
+    "Name": "Emanuel Brecknall",
+    "Feedback": {
+      "Design": 7.3, 
+      'Performance': 4.9, 
+      "Responsive": 7.4
+    }
   }];

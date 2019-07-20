@@ -1,11 +1,16 @@
 import React, { Component } from "react";
 import GraphicalFeebbackSystem from "../../plugins/genericGraphicalFeedbackSystem/index";
-/* import MapComponent from "./Map/MapComponent"; */
+import { GetFeedbackData } from "../../actions/ContactActions";
+import { connect } from "react-redux";
+import UserFeedback from "./UserFeedback"
 class Contact extends Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
+  componentDidMount = () => {
+    this.props.dispatch(GetFeedbackData());
+  };
   postData = data => {
     console.log(data);
   };
@@ -14,7 +19,7 @@ class Contact extends Component {
     const ratings = ["Design", "Performance", "Responsive"];
     return (
       <div className="Contact">
-        <div className="row">
+        <div className="row pt50">
           <div className="col float-left">
             {" "}
             <div className="feedback-container">
@@ -26,11 +31,17 @@ class Contact extends Component {
               />
             </div>{" "}
           </div>
-          <div className="col float-right"> {/* <MapComponent  /> */} </div>
+          <div className="col float-right">
+            {" "}
+            <UserFeedback Data={this.props.feedbackData} /> 
+          </div>
         </div>
       </div>
     );
   }
 }
 
-export default Contact;
+const mapStateToProps = ({ Contact }) => ({
+  feedbackData: Contact.feedback
+});
+export default connect(mapStateToProps)(Contact);

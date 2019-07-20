@@ -142,7 +142,7 @@ header ul li a.nav-link.active span.liText{
 #reactFeedbackComponent{
   width: 500px;
   padding: 0 50px;
-  box-shadow: 0px 0px 10px 1px #ccc;
+  box-shadow: 0px 2px 12px -1px #3e3e3e;
   margin: auto; 
 }
 .lh36{
@@ -156,6 +156,9 @@ header ul li a.nav-link.active span.liText{
 }
 .pb30{
   padding-bottom: 30px !important;
+}
+.pt50{
+  padding-top: 50px;
 }
 #outerDiv{
   width: 100%;
@@ -222,7 +225,7 @@ position: relative;
 overflow: hidden;
 }
 #intro-container::before {
-  background-image: url('../public/assets/images/home-bg.jpg');
+  background-image: url('../public/assets/images/home-bg1.jpg');
   background-size: cover;
   content: "";
   display: block;
@@ -396,3 +399,43 @@ overflow: hidden;
   box-shadow: 0px 2px 12px -1px #3e3e3e;
 }
 /* Skills Css  Ends Here */
+
+
+/* Contacts css starts Here */
+.Contact::before {
+  background-image: url('../public/assets/images/home-bg2.jpg');
+  background-size: cover;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.4;
+}
+.Contact{
+  height: 100%;
+} 
+/* .Contact .col.float-right{
+  box-shadow: 5px 2px 12px 0px #3e3e3e;
+} */
+.Contact #UserFeedback{
+  box-shadow: 5px 2px 12px 0px #3e3e3e;
+  max-width: 650px;
+  min-height: 639px;
+  margin: auto;
+}
+.Contact #UserFeedback ul.feedback{
+  border-bottom: 1px solid #333;
+  margin-bottom: 0;
+  padding: 10px 25px;
+  list-style: none;
+}
+.Contact #UserFeedback ul.feedback:hover{
+  transform: scale(1.1);
+  background-color: #333;
+  color: #fff;
+  box-shadow: -4px -2px 12px 2px #3e3e3e;
+}

@@ -1,9 +1,10 @@
 import { combineReducers } from "redux";
 import alerts from "./alertReducer";
-
+import Contact from "./ContactReducer";
 
 const rootReducer = combineReducers({
-    alerts
+    alerts,
+    Contact
 });
 
 export default rootReducer;

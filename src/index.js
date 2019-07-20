@@ -10,7 +10,7 @@ import {
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 library.add(fab, faHome, faUser, faCode, faEnvelope);
-import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import { Provider } from "react-redux";
 import { createBrowserHistory } from "history";
 import configureStore from "./store";
@@ -21,9 +21,8 @@ import Page404 from "./containers/Helpers/Page404/";
 import Page500 from "./containers/Helpers/Page500/";
 const store = configureStore();
 const history = createBrowserHistory();
-/* console.log(window.location.pathname);
- *//* var Path = getPath(window.location.pathname);
- */ReactDOM.render(
+
+ReactDOM.render(
   <Provider store={store} key="provider">
     <ErrorBoundary>
       <HashRouter history={history}>

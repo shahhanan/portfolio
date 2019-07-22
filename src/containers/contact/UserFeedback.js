@@ -30,10 +30,3 @@ class UserFeedback extends Component {
 
 export default UserFeedback;
 
-/* forIn(Data, (value, key) => {
-    console.log(key);
-    console.log(value);
-    return (
-      <span>1</span>
-    );
-  }) */

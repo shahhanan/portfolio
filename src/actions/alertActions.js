@@ -58,4 +58,4 @@ export function dismissAlert(alert) {
   }; */
 }
 
-const ResponsiveTextMock = "This Application Is not Responsive yet and is still under Development";
+const ResponsiveTextMock = "This Application Is not Fully Responsive yet and is still under Development";

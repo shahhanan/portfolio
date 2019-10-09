@@ -20,12 +20,12 @@ class AppRouter extends Component {
      this.props.dispatch(removeResponsiveAlerts());
     }
   componentDidMount = () => {
-    setTimeout(
+    /* setTimeout(
       function() {
         this.props.dispatch(loadResponsiveAlerts());
       }.bind(this),
       3000
-    );
+    ); */
   };
   render() {
     return (
